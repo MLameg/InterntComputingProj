@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Atlantic Trails Resort: Comments</title>
+		<style>
+			.menu {list-style-type: none;font-size: 20px;overflow: hidden;background-color: lightblue;}
+			.imenu {border-right: 2px solid white;float: left;}
+			.imenu a{color: white;text-align: center;padding: 0px 80px;text-decoration: none;}
+			.imenu a:hover {background-color: #111;}
+			
+			h2{text-align: center;}
+			
+			fieldset{background-color: #f4f4f4;}
+			.fbp{text-align: center;}
+			form{margin: auto; width: 400px; }
+			div {margin-top: 1em;}
+			label{display: inline-block; width: 130px; text-align: left; font-weight: bold;}
+			.btn{text-align:center;}
+			.rad{width: auto; border-right: 1px solid grey; padding: 10px; text-align: center;}
+	
+			footer{background-color: lightblue; width: 100%; text-align: right; margin-top:100px; padding-top:30px;}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Atlantic Trails Resort</h1>
+		<ul class="menu">
+			<li class="imenu"><a href="index.html">Home</a></li>
+			<li class="imenu"><a href="yurts.html">Yurts</a></li>
+			<li class="imenu"><a href="activities.html">Activities</a></li>
+			<li class="imenu"><a href="reservations.html">Reservations</a></li>
+			<li class="imenu"><a href="fback.html">Comments</a></li>
+		</ul>
+		<h2>Tell us what you think!</h2>
+		
+		<p class="fbp">We, at Atlantic Trails Resort, believe in providing the highest quality of service to our customers. 
+		Help us maintain our quality by taking time and providing us with your experience at Atlantic Trails Resort.</p>
+		
+		<form method = "post" action = "index.html">
+			<fieldset>
+			<div><label>Last Name:</label><input name = "lname" type = "text" size = "25"></div>
+			<div><label>First Name:</label><input name = "fname" type = "text" size = "25"></div>
+			<div><label>Email Address:</label><input name = "email" type = "email" size = "25"></div>
+			<div class="rate">
+			<label>Rate your stay:</label>
+				<input name = "rate" type = "radio"
+					value = "5"><label class="rad">5: Best</label>
+				<input name = "rate" type = "radio"
+					value = "4"><label class="rad">4</label>
+				<input name = "rate" type = "radio"
+					value = "3"><label class="rad">3</label>
+				<input name = "rate" type = "radio"
+					value = "2"><label class="rad">2</label>
+				<input name = "rate" type = "radio"
+					value = "1"><label class="rad">1: Worst</label>
+			
+			<div><label>Comments:</label><textarea name = "comments" 
+					rows = "12" cols = "72">Enter comments here.
+				</textarea></div>
+			<div class="btn"><input type = "submit" value = "Submit Feedback"></div>
+			</fieldset>
+		</form>
+		
+		<footer>
+			<p>Atlantic Trails Resort<br>
+				One Normal Ave,<br>
+				Montclair, New Jersey 07043<br>
+				973-973-3333
+			</p>
+			<p><i>Copyright &#169; 2016 Atlantic Trails Resort<br>
+				<a href="mailto:Lameg.Monti@mail.montclair.edu">Lameg.Monti@mail.montclair.edu</a></i>
+			</p>
+		</footer>		
+	</body>
+</html>

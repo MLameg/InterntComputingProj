@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Atlantic Trails Resort: Reservations</title>
+		
+		<style>
+			.menu {list-style-type: none;font-size: 20px;overflow: hidden;background-color: lightblue;}
+			.imenu {border-right: 2px solid white;float: left;}
+			.imenu a{color: white;text-align: center;padding: 0px 80px;text-decoration: none;}
+			.imenu a:hover {background-color: #111;}
+			
+			form{margin: auto; width: 400px; background-color: #f4f4f4;}
+			div {margin-top: 1em;}
+			label{display: inline-block; width: 130px; text-align: right; font-weight: bold;}
+			legend{font-size: 20px; font-weight: bold; text-align: center;}
+			h2{text-align:center;}
+			.btn{text-align:center;}
+				
+			footer{background-color: lightblue; width: 100%; text-align: right; margin-top:100px; padding-top:30px;}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Atlantic Trails Resort</h1>
+		
+		<ul class="menu">
+			<li class="imenu"><a href="index.html">Home</a></li>
+			<li class="imenu"><a href="yurts.html">Yurts</a></li>
+			<li class="imenu"><a href="activities.html">Activities</a></li>
+			<li class="imenu"><a href="reservations.html">Reservations</a></li>
+			<li class="imenu"><a href="fback.html">Comments</a></li>
+		</ul>
+		
+		<h2>Make your reservation today at Atlantic Trails Resort today!</h2>
+		
+		<form method = "post" action = "index.html">
+					<fieldset>
+						<legend>Contact Information</legend>
+						<div><label>Last Name:</label><input name = "lname" type = "text" size = "25"></div>
+						<div><label>First Name:</label><input name = "fname" type = "text" size = "25"></div>
+						<div><label>Address 1:</label><input name = "lname" type = "text" size = "25"></div>
+						<div><label>Address 2:</label><input name = "fname" type = "text" size = "25"></div>
+						<div><label>City:</label><input name = "city" type = "text" size = "25"></div>
+						<div><label>State:</label><input name = "state" type = "text" size = "2"></div>
+						<div><label>Zip:</label><input name = "zip" type = "text" size = "10"></div>
+						<div><label>Phone Number:</label>
+								<input name = "tela" type = "tel" maxlength = "3" size="1">-
+								<input name = "telf" type = "tel" maxlength = "3" size="1">-
+								<input name = "tell" type = "tel" maxlength = "4" size="2">
+						</div>
+						<div><label>Email Address:</label><input name = "email" type = "email" size = "25"></div>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Booking</legend>
+						<div><label>Check-In:</label><input name = "chkin" type = "date"></div>
+						<div><label>Check-Out:</label><input name = "chkout" type = "date"></div>
+						<div><label>Number of people:</label><input name = "numppl" type = "number" min = "1"; max = "12"></div>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Billing Information</legend>
+						<div><label>Payment Method:</label><select name = "Credit Card">
+							<option selected>Master Card</option>
+							<option>VISA</option>
+							<option>AMEX</option>
+							<option>Discover</option>
+						</select></div>
+						<div><label>Credit Card Number:</label><input name = "ccn" type = "text" size = "25"></div>
+						<div><label>Expiration Date:</label><select name = "expm">
+							<option selected>Jan</option>
+							<option>Feb</option>
+							<option>Mar</option>
+							<option>Apr</option>
+							<option>May</option>
+							<option>Jun</option>
+							<option>Jul</option>
+							<option>Aug</option>
+							<option>Sep</option>
+							<option>Oct</option>
+							<option>Nov</option>
+							<option>Dec</option></select> / <input name = "expy" maxlength = "4" size="1">
+						</div>
+						<div><label>Last Name:</label><input name = "lname" type = "text" size = "25"></div>
+						<div><label>First Name:</label><input name = "fname" type = "text" size = "25"></div>
+						<div><label>Address 1:</label><input name = "lname" type = "text" size = "25"></div>
+						<div><label>Address 2:</label><input name = "fname" type = "text" size = "25"></div>
+						<div><label>City:</label><input name = "city" type = "text" size = "25"></div>
+						<div><label>State:</label><input name = "state" type = "text" size = "2"></div>
+						<div><label>Zip:</label><input name = "zip" type = "text" size = "10"></div>
+						<div><label>Phone Number:</label>
+								<input name = "btela" type = "tel" maxlength = "3" size="1">-
+								<input name = "btelf" type = "tel" maxlength = "3" size="1">-
+								<input name = "btell" type = "tel" maxlength = "4" size="2">
+						</div>
+						<div><label>Email Address:</label><input name = "bemail" type = "email" size = "25"></div>
+					</fieldset>
+					
+					<p class="btn"><input type = "submit" value = "Submit Reservation"></p>
+		</form>
+		
+		<footer>
+			<p>Atlantic Trails Resort<br>
+				One Normal Ave,<br>
+				Montclair, New Jersey 07043<br>
+				973-973-3333
+			</p>
+			<p><i>Copyright &#169; 2016 Atlantic Trails Resort<br>
+				<a href="mailto:Lameg.Monti@mail.montclair.edu">Lameg.Monti@mail.montclair.edu</a></i>
+			</p>
+		</footer>
+
+		
+	</body>
+</html>
